@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Momento mori</title>
+</head>
+<body>
+    <figure class="quote-container">
+        <p id="quote"></p>
+        <p id="quote-author"></p>
+        <button id="next-quote">Next</button>
+    </figure>
+    <h1 timer class="shadow-back"></h1>
+    <div id="datestring">Отличный день!</div>
+    <div class="greet-name shadow-back">
+        <span greet class="name-str ">Good morning</span><span class="name-str">,</span>
+        <input id='usernamefield' class="name-str"/>
+    </div>
+    <div class="focus-string shadow-back">
+        <span class="focus-str">How do you want to spend the day:</span>
+        <input id="focus"/>
+    </div>
+    <button changeBgndBtn class="changeBgnd">Cng Background</button>
+    <div class="wthr-container">
+        <p class="wthr-city"><input type="text" id="city" placeholder="Введите город"></p>
+        <div id="wthr"></div>
+        <div id="wthricon"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

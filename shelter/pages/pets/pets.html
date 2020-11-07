@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="./pets.css">
+    <link rel="stylesheet" href="../../smallmenu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Our pets</title>
+</head>
+<body>
+    <script>const imgPath = '../../assets/images/'</script>
+    <header class="header">
+        <div class="header-container">
+            <a href="../../index.html">
+                <div class="header-logo">
+                    <h1 class="logo-title">Cozy House</h1>
+                    <p class="logo-subtitle">Shelter for pets in Boston</p>
+                </div>
+            </a>
+            <div class="header-menu">
+                <div class="header-logo small-menu-logo">
+                    <a href="../../index.html">
+                        <h1 class="logo-title">Cozy House</h1>
+                        <p class="logo-subtitle">Shelter for pets in Boston</p>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="../../index.html" class="menu-link">About the shelter</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link" autofocus>Our pets</a></li>
+                    <li class="menu-item">Help the shelter</li>
+                    <li class="menu-item">Contacts</li>
+                </ul>
+            </div>
+            <button id="burger" class="small-menu" onclick="sideMenu()">
+                <img src="../../assets/icons/Burger.png" alt="menu" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="section-friends">
+        <h3 class="friends-header">Our friends who<br>are looking for a house</h3>
+        <div class="friends-slider">
+            <div class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-katrine.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Katrine</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+            <div id="first-hide2" class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-jennifer.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Jennifer</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+            <div class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-woody.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Woody</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+            <div id="first-hide2" class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-katrine.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Sophia</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+
+            <div class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-timmy.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Timmy</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+            <div id="first-hide2" class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-charly.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Charly</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+            <div id="first-hide1" class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-scarlet.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Scarlett</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+            <div id="first-hide1" class="slider-item">
+                <div class="slider-item-foto">
+                    <img src="../../assets/images/pets-katrine2.png" alt="" class="slider-item-img">
+                </div>
+                <p class="slider-item-name">Freddie</p>
+                <button class="slider-item-button">Learn more</button>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <button id="sliderFirst" class="slider-button" disabled onclick="pageSlider('first')"><<</button>
+            <button id="sliderPrev" class="slider-button" disabled onclick="pageSlider('prev')"><</button>
+            <button id="sliderPage" class="slider-button slider-button-mum">1</button>
+            <button id="sliderNext" class="slider-button" onclick="pageSlider('next')">></button>
+            <button id="sliderLast" class="slider-button" onclick="pageSlider('last')">>></button>
+        </div>
+    </section>
+
+    <section class="section-last">
+        <div class="section-last-container">
+            <div class="last-left marg_bot">
+                <div class="last-content">
+                    <div class="last-content-header"><h3>For questions and suggestions</h3></div>
+                    <div class="last-content-data">
+                        <a href="mailto:email@shelter.com" class="contact-link" target="_blank">
+                            <img src="../../assets/icons/mail.png" alt="" class="last-content-icon">
+                            <h4 class="last-content-text">email@shelter.com</h4>
+                        </a>
+                    </div>
+                    <div class="last-content-data">
+                        <a href="tel:+1234567890" class="contact-link" target="_blank">
+                            <img src="../../assets/icons/phone.png" alt="" class="last-content-icon">
+                            <h4 class="last-content-text">+13 674 567 75 54</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="last-center marg_bot">
+                <div class="last-content">
+                    <div class="last-content-header"><h3>We are waiting for your visit</h3></div>
+                    <div class="last-content-data">
+                        <a href="https://goo.gl/maps/og8ARSYDLNi9bFf28" class="contact-link" target="_blank">
+                            <img src="../../assets/icons/pin.png" alt="" class="last-content-icon">
+                            <h4 class="last-content-text">1 Central Street, Boston (entrance from the store)</h4>
+                        </a>
+                    </div>
+                    <div class="last-content-data">
+                        <a href="https://goo.gl/maps/og8ARSYDLNi9bFf28" class="contact-link" target="_blank">
+                            <img src="../../assets/icons/pin.png" alt="" class="last-content-icon">
+                            <h4 class="last-content-text">18 South Park, London </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="marg_bot last-right"></div>
+        </div>
+    </section>
+    <script src="../../scripts.js"></script>
+</body>
+</html>

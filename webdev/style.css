@@ -1,0 +1,654 @@
+/* RESET CSS */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* RESET CSS finished */
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('./assets/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+    url('./assets/roboto-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/roboto-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-900 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Roboto Black'), local('Roboto-Black'),
+    url('./assets/roboto-v20-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/roboto-v20-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('./assets/roboto-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./assets/roboto-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #4E4E4E;
+}
+/* *********************** HEADER ******************** */
+.header {
+    position: absolute;
+    width: 1600px;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-list {
+    width: 582px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+.header-link {
+    line-height: 140%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.header-link:hover, .header-link:focus, .header-link:active {
+    text-decoration: underline;
+}
+
+/* ********************** Header style END ****************** */
+
+/* Intro styles START*/
+
+.intro {
+    width: 1600px;
+    height: 744px;
+    background: url("./assets/bg-image.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 231px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 730px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-title {
+    width: 730px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    justify-content: center;
+    white-space: nowrap;
+
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    width: 504px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+.button-getstarted {
+    display: block;
+    margin: 0 auto 183px auto;
+    width: 184px;
+    height: 46px;
+    background: #00AFDB;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFF;
+    border-width: inherit;
+}
+
+.button-getstarted:hover {background: #009CC2;}
+
+.social {
+    width: 170px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-img {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.social-img:hover {opacity: .5}
+/* ****************** Intro styles END ******************** */
+
+/* ****************** RAPP styles START ******************* */
+.rapp {
+    max-width: 1600px;
+    height: 842px;
+    background-color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rapp-left {
+    max-width: 407px;
+    height: 233px;
+    margin-left: 268px;
+    margin-bottom: 20px;
+}
+
+.rapp-left-header {
+    max-width: 368px;
+    height: 57px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #373737;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.rapp-left-content {
+    max-width: 407px;
+    height: 80px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #4E4E4E;
+    margin-bottom: 30px;
+}
+
+.rapp-left-button {
+    width: 184px;
+    height: 46px;
+    background: #00AFDB;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border-width: inherit;
+    color: #FFFFFF;
+}
+
+.rapp-left-button:hover {background: #009CC2;}
+
+
+.rapp-right {
+    margin-right: 268px;
+    margin-bottom: 20px;
+}
+
+.rapp-right-img {
+    max-width: 407px;
+    max-height: 582px;
+}
+/* **************** RAPP styles END *********************** */
+
+/* ***************** COMMUNITY styles START **************** */
+.community {
+    background-color: #F5F6F7;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    height: 504px;
+    align-items: center;
+}
+.community-left {
+    max-width: 298px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 269px;
+    margin-bottom: 20px;
+}
+
+.community-left-img {
+    width: 45px;
+    height: 45px;
+    background: url(./assets/icon.png), #C4C4C4;
+    margin-bottom: 21px;
+    border-radius: 50%;
+}
+
+.community-left-content {
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #4E4E4E;
+}
+
+.community-left-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #373737;
+}
+
+.community-right{
+    width: 874px;
+    height: 290px;
+    overflow: hidden;
+    margin-bottom: 53px;
+    margin-right: 20px;
+}
+
+.rectangles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 294px;
+}
+.rectangles-right {
+    margin-left: 18px;
+}
+
+.rectangles-left {
+    margin-right: 18px;
+}
+
+.rectangles-left:hover {opacity: .5}
+.rectangles-right:hover {opacity: .5}
+
+#slider-num {
+    font-size: 16px;
+}
+
+.slider-count { font-size: 16px; }
+
+.slider {
+    position: relative;
+    display: inline-flex;
+    right: 0px;
+    transition: all .5s ease;
+}
+
+.slide {
+    width: 436px;
+    height: 300px;
+}
+/* COMMUNITY styles END */
+
+/* IMPLEMENT styles START */
+.implement {
+    max-width: 1600px;
+    height: 842px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.implement-left {
+    max-width: 407px;
+    max-height: 582px;
+    margin-left: 198px;
+    margin-bottom: 20px;
+}
+
+.implement-right {
+    margin-right: 307px;
+    margin-bottom: 19px;
+}
+
+.implement-right-header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #373737;
+}
+
+.implement-right-content {
+    width: 407px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 30px;
+    color: #4E4E4E;
+}
+
+.implement-right-button {
+    padding: 15px 47px;
+    width: 180px;
+    height: 46px;
+    background: #00AFDB;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-width: inherit;
+}
+
+.implement-right-button:hover {background: #009CC2;}
+
+/* IMPLEMENT styles END */
+
+/* SIGNUP stules START*/
+.signup {
+    max-width: 1600px;
+    height: 524px;
+    background: linear-gradient(0deg, rgba(0,0,0,.3), rgba(0,0,0,.3)), url('./assets/sgnup-image-bg2.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-container {
+    max-width: 406px;
+    margin-bottom: 22px;
+}
+.signup-header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.signup-form {
+    width: 406px;
+    height: 46px;
+    color: white;
+    display: flex;
+
+}
+.signup-form-field {
+    width: 340px;
+    height: 46px;
+    background: #FFFFFF;
+    border-width: 0;
+    padding-left: 24px;
+    color: #373737;
+}
+.signup-form-info {
+    display: flex;
+}
+.signup-form-signup {
+    width: 66px;
+    height: 46px;
+    background: url(./assets/fa-check.png) no-repeat center #00AFDB;
+    border-width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form-signup:hover {background: url(./assets/fa-check.png) no-repeat center #009CC2;}
+
+/* SIGNUP stules END*/
+
+/* DOWNLOAD stules START*/
+.download {
+    max-width: 1600px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;;
+}
+
+.download-header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.download-content {
+    max-width: 483px;
+    font-size: 14px;
+    line-height: 140%;
+    align-items: center;
+    text-align: center;
+    color: #4E4E4E;
+    margin-bottom: 30px;
+}
+.download-buttons {
+    width: 402px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.download-button {
+    width: 186px;
+    height: 46px;
+    display: flex;
+    border: 0 solid white;
+}
+
+.download-button-name {
+    width: 128px;
+    height: 50px;
+    background: #00AFDB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-button-name:hover {background: #009CC2;}
+
+.download-button-icon {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #009CC2;
+}
+
+.download-button-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+.download-button-name-text {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/* DOWNLOAD stules END*/
+
+/* FOOTER stules START*/
+.footer {
+    max-width: 1600px;
+    height: 184px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content {
+    width: 1280px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18px;
+    margin-bottom: 13px;
+}
+.footer-menu {
+    width: 236px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu-item {
+    width: 65px;
+    white-space: nowrap;
+    height: 20px;
+    border-right: 1px solid #4E4E4E;
+    color: #CCC;
+}
+
+.footer-menu-item:hover {text-decoration: underline;}
+
+.footer-menu-item:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+
+.footer-c {
+    width: 236px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-c-text {
+    color: #818181;
+}
+/* FOOTER stules END*/
