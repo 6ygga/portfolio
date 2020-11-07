@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ccc881c8-9368-4e16-89a7-dbaef4f6eef3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/6ygga-JS2020Q3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VirtKeyb/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VirtKeyb/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VirtKeyb/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VirtKeyb/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="gh-pages" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jBgaf25Tuqzxn58jkhNWqnokz9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccc881c8-9368-4e16-89a7-dbaef4f6eef3" name="Default Changelist" comment="" />
+      <created>1603282963798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603282963798</updated>
+      <workItem from="1603282965208" duration="51000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="334" y="458" key="FileChooserDialogImpl" timestamp="1603283014201">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="334" y="458" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1603283014201" />
+    <state x="146" y="436" key="Vcs.Push.Dialog.v2" timestamp="1603282998626">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="146" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1603282998626" />
+  </component>
+</project>
